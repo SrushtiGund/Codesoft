@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <input type="text" id="display" disabled>
+    </div>
+    <div class="buttons">
+      <button onclick="appendToDisplay('7')">7</button>
+      <!-- Repeat for buttons 0-9 and operators +, -, *, / -->
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

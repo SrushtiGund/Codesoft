@@ -1,0 +1,26 @@
+// Define variables to store input and result
+let input = '';
+let result = '';
+
+// Function to append input to the display
+function appendToDisplay(digit) {
+  input += digit;
+  document.getElementById('display').value = input;
+}
+
+// Function to calculate and display the result
+function calculate() {
+  try {
+    result = eval(input); // Use eval to perform the calculation
+    document.getElementById('display').value = result;
+  } catch (error) {
+    document.getElementById('display').value = 'Error';
+  }
+}
+
+// Reset the calculator (if needed)
+function clear() {
+  input = '';
+  result = '';
+  document.getElementById('display').value = '';
+}
